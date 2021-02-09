@@ -1,4 +1,4 @@
-# HTML Parser
+# HTML Statistics
 
 Simple html parser and calculate unique words.
 At the command line, you must enter the web page address, and the file download directory.

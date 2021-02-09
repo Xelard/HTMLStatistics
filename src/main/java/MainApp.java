@@ -4,12 +4,8 @@ import web.HttpResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.Logger;
-
-
 
 public class MainApp {
-    private static final Logger log = Logger.getLogger(MainApp.class.getName());
 
     public static void main(String args[]) throws IOException {
 

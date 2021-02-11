@@ -11,14 +11,14 @@ public class MainApp {
 
         System.out.println("Enter URL:");
         Scanner scanner = new Scanner(System.in);
-        String url = scanner.nextLine();
+        String url = scanner.hasNext() ? scanner.nextLine() : "";
 
         HttpClient httpClient = new HttpClient(url);
         HttpResponse response = httpClient.connect();
         response.checkOk();
 
         System.out.println("Enter the directory:");
-        String strCatalog = scanner.nextLine();
+        String strCatalog = scanner.hasNext() ? scanner.nextLine() : "";
         File directory = new File(strCatalog);
 
         HtmlWordCounter.builder(url).setSaveFile(directory).setWordDelimiters(" ", "\n").build().run(response);
